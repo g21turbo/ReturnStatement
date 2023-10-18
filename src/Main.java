@@ -4,6 +4,9 @@ public class Main {
         add(10,20);
         String grade = getGrade(75);
         System.out.println("The grade is: " + grade);
+
+        boolean age = canBuyAlcohol(19);
+        System.out.println("This person can buy alcohol: " + age);
     }
 
     public static int add(int a, int b) {
@@ -20,5 +23,12 @@ public class Main {
         } else {
             return "F";
         }
+    }
+
+    public static boolean canBuyAlcohol(int age) {
+        if (age < 21){
+            return false;
+        }
+        return true;
     }
 }
